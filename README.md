@@ -61,4 +61,20 @@ $('h1').css('background', 'red');
 $('#button').click(function () {
     console.log('button');
 });
+$('#button').click(function () {
+    $('#idh1').toggleClass('color');
+    $('#idh1').css('color', 'yellow');
+});
+```
+
+# Adding atributes and chaining methods
+
+```js
+$('h1').attr('width', '100%').css({ background: 'yellow', color: '#333' });
+```
+
+# Removes Node from DOM
+
+```js
+$('h1').remove('#idh1');
 ```
